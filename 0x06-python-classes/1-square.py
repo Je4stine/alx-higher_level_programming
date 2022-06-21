@@ -1,12 +1,13 @@
 #!/usr/bin/python3
 """
-Square Class
+module documentation
 """
+
+
 class Square:
-
+    """
+    Square class
+    """
     def __init__(self, size):
-        """
-            Square class
-
-        """
         self.__size = size
+        
