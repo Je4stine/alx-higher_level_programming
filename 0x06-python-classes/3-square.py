@@ -1,23 +1,26 @@
 #!/usr/bin/python3
+"""
+module documentation
+"""
+
+
 class Square:
-    """Square Class
-    A Square Class
     """
-
+    Square documentation
+    """
     def __init__(self, size=0):
-        """__init__
-
-        """
-        if type(size) is not int:
-            raise TypeError('size must be an integer')
-
-        if size < 0:
-            raise ValueError('size must be >= 0')
-
-        self.__size = size
+        try:
+            if type(size) == int:
+                if size >= 0:
+                    self.__size = size
+                else:
+                    raise ValueError
+            else:
+                raise TypeError
+        except TypeError:
+            print("size must be an integer")
+        except ValueError:
+            print("size must be >= 0")
 
     def area(self):
-        """Returns the current square area
-
-        """
-        return self.__size ** 2
+        return self.__size * self.__size
