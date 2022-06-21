@@ -1,6 +1,11 @@
 #!/usr/bin/python3
+"""
+module documentation
+"""
+
+
 class Square:
-    """Square Class
-        This class don't do anything for the moment
+    """
+    Empty Square class
     """
     pass
