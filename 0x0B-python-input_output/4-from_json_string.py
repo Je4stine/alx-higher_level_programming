@@ -1,6 +1,13 @@
 #!/usr/bin/python3
-from json import loads
+"""
+4-from_json_string module
+"""
 
 
 def from_json_string(my_str):
-    return loads(my_str)
+    """
+    returns an object (Python data structure) represented by a JSON
+    string
+    """
+    import json
+    return json.loads(my_str)
